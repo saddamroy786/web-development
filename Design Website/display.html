@@ -1,0 +1,66 @@
+<!-- In this lecture we are going to learn about css display property.The display css property sets whether an element is treated as a block or inline element. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>css display property</title>
+    <style>
+        header {
+            margin: auto;
+            border: 2px solid red;
+            width:100%;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 90px;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0px;
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: darksalmon;
+            margin: 7px 7px;
+            padding: 23px;
+            /* display: block; */
+            display: inline-block;
+            width: 32%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="20210705_181252.jpg" alt="">
+        <h3>Welcome to Nargis blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corporis sapiente sed repellendus id
+                iusto quam sint qui eligendi. Odio rem nobis mollitia accusamus tempora voluptatem. Architecto quos
+                dolor, neque sequi obcaecati vitae pariatur ea quod perspiciatis voluptatibus inventore accusantium!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corporis sapiente sed repellendus id
+                iusto quam sint qui eligendi. Odio rem nobis mollitia accusamus tempora voluptatem. Architecto quos
+                dolor, neque sequi obcaecati vitae pariatur ea quod perspiciatis voluptatibus inventore accusantium!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corporis sapiente sed repellendus id
+                iusto quam sint qui eligendi. Odio rem nobis mollitia accusamus tempora voluptatem. Architecto quos
+                dolor, neque sequi obcaecati vitae pariatur ea quod perspiciatis voluptatibus inventore accusantium!</p>
+        </div>
+    </div>
+</body>
+
+</html>

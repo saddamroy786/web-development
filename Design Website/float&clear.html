@@ -1,0 +1,97 @@
+<!-- In this we are going to see about different typesof alignments available in css. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* for sub items */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 4px solid purple;
+            background-color: rgb(244, 175, 116);
+            margin: 33px auto;
+            /* margin auto is used for container center */
+
+        }
+
+        .item {
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(246, 165, 205);
+        }
+
+        #fruits {
+            float: left;  /* the elements floats to the left of its container */
+            width: 48%;
+
+        }
+
+        #computer {
+            float: right;  /* the elements floats to the right of its container */
+            width: 48%;
+        }
+
+        #stationary {
+            /* to avoid overlaps the section, we use the property known as clear. */
+            clear: both;
+            /* float:left; */
+            width: 100%;
+        }
+
+        p,
+        h1 {
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitsPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ex
+                distinctio ea voluptatibus animi, laboriosam omnis, quidem ad possimus architecto deserunt debitis
+                maxime at delectus eveniet id aut itaque fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda aut quis obcaecati eveniet praesentium! Quia sequi at necessitatibus possimus. Molestias esse
+                nam corporis ipsum odio quidem rerum eveniet dolore amet.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ex
+                distinctio ea voluptatibus animi, laboriosam omnis, quidem ad possimus architecto deserunt debitis
+                maxime at delectus eveniet id aut itaque fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt culpa assumenda aliquam, et porro sint minima sequi? Recusandae commodi, tempora unde deleniti
+                fugiat eos. Blanditiis, ex perspiciatis? Perferendis, recusandae. Cupiditate.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationaryPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ex
+                distinctio ea voluptatibus animi, laboriosam omnis, quidem ad possimus architecto deserunt debitis
+                maxime at delectus eveniet id aut itaque fuga!</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>stationary</h3>
+            <p id="glassesPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ex
+                distinctio ea voluptatibus animi, laboriosam omnis, quidem ad possimus architecto deserunt debitis
+                maxime at delectus eveniet id aut itaque fuga!</p>
+        </div>
+    </div>
+</body>
+
+</html>
