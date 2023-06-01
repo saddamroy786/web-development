@@ -1,2 +1,3 @@
-# web-development
-website for covin vaccination
+ “WEBSITE DESIGN FOR COVID-19 VACCINATION SYSTEM USING NODEJS”
+ Languages used: -
+1.HTML/CSS 2. JAVASCRIPT 3. MYSQL 4. NODEJS 5. EXPRESSJS 
