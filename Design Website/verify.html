@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>verification </title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center mt-3 mb-3"><!--<%= title %>--></h1>
+
+<!--             
+             <% if(action == 'add') { %>
+
+            <% } else { %> -->
+                <center> 
+                    <section id="varify-section">
+                        <h2 class="h1-pry center">Verification details</h2>
+                
+                        <form method="get"><div id="varifies">
+                            <div class="search">
+                                <input type="text" name="search" id="search" placeholder="Enter your adhar number">
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-success mt-2" name="submit" />
+                    </section>
+                    </form></center>
+<br>
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col"><b> YOUR COWIN VERIFICATION DETAILS</b></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" width="">
+                            
+                               <tr><th width="200">First Name</th><td><%= message:'a' %></td></tr>
+                               <tr><th>Last Name</th><td><!--<%= data.lname %>--></td></tr>
+                              <tr><th>Gender</th><td><!--<%= data.Gender %>--></td></tr>
+                                <tr><th>Date of Birth</th><td><!--<%= data.dob %>--></td><tr>
+                                <tr><th>Dose Name</th><td><!--<%= data.dname %>--></td></tr>
+                               <tr><th>Dose No</th><td><!--<%= data.dno %>--></td></tr>
+                                <tr><th>Vaccination Date</th><td><!--<%= data.vdate %>--></td></tr>
+                                <tr><th>Hospital Type</th><td><!--<%= data.ht %>--></td></tr>
+                            
+                             <!-- <%
+                            if(sampleData.length > 0)
+                            {
+                                sampleData.forEach(function(data)
+                                {
+                            %>
+                                   
+                            <%
+                                });
+                            }
+                            else
+                            {
+                            %>
+                            <tr>
+                                <td colspan="8">No Data Found</td>
+                            </tr>
+                            <%
+                            }
+                            %>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+
+             <% } %> -->
+
+        </div> 
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <p id="demo"></p>
+        </body>
+</html>

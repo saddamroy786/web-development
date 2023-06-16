@@ -1,0 +1,201 @@
+<!-- update.html -->
+
+<html>  
+    <head> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        <script>
+            function validate(){
+                if(document.myform.firstname.value=="") 
+                {
+                    alert("Enter your missing field : First Name");
+                    document.myform.firstname.focus();
+                    return false;
+                }
+    
+                if(document.myform.lastname.value=="") 
+                {
+                    alert("Enter your missing field : Last Name");
+                    document.myform.lastname.focus();
+                    return false;
+                }  
+    
+                if(document.myform.myGender.value=="") 
+                {
+                    alert("Enter your missing field : Gender");
+                    document.myform.myGender.focus();
+                    return false;
+                } 
+    
+                if(document.myform.myDate.value=="") 
+                {
+                    alert("Enter your missing field : Date Of Birth");
+                    document.myform.myDate.focus();
+                    return false;
+                }  
+                
+                if(document.myform.email.value=="") 
+                {
+                    alert("Enter your missing field : Email Id");
+                    document.myform.email.focus();
+                    return false;
+                }
+                
+                if(document.myform.Pnumber.value=="") 
+                {
+                    alert("Enter your missing field : PhoneNumber");
+                    document.myform.Pnumber.focus();
+                    return false;
+                }
+                
+                if(document.myform.country.value=="") 
+                {
+                    alert("Enter your missing field : Country");
+                    document.myform.country.focus();
+                    return false;
+                }  
+                
+                if(document.myform.DoseName.value=="") 
+                {
+                    alert("Enter your missing field : Dose Name");
+                    document.myform.DoseName.focus();
+                    return false;
+                } 
+                
+                if(document.myform.DoseNo.value=="") 
+                {
+                    alert("Enter your missing field : Dose no");
+                    document.myform.DoseNo.focus();
+                    return false;
+                } 
+                
+                if(document.myform.VaccDate.value=="") 
+                {
+                    alert("Enter your missing field : Vaccination Date");
+                    document.myform.VaccDate.focus();
+                    return false;
+                }  
+                
+                if(document.myform.hospitalType.value=="") 
+                {
+                    alert("Enter your missing field : Hospital Type");
+                    document.myform.hospitalType.focus();
+                    return false;
+                }  
+                
+                if(document.myform.shift.value=="") 
+                { 
+                    alert("Enter your missing field : Slot Time");
+                    document.myform.shift.focus();
+                    return false;
+                }  
+                if(document.myform.Adnumber.value=="") 
+                {
+                    alert("Enter your missing field : Adhar Number");
+                    document.myform.Adnumber.focus();
+                    return false;
+                }
+                
+                if(document.myform.files.value=="") 
+                {
+                    alert("Enter your missing field : Upload Adhar Card");
+                    document.myform.files.focus();
+                    return false;
+                }  
+                
+            }
+        </script>
+   </head>
+   <body>
+        <div class="container">
+            <div class="row" style="justify-content:center;"> 
+                <div class="col-md-6 mt-2">  
+                   
+                        <div class="alert alert-danger" > 
+                           <h4 class="alert-heading">UPDATE FORM</h4>
+                           
+                           <hr>
+                       </div>
+                   
+                   <div class="card card-warning">
+                       <div class="card-header text-center">
+                           <h3>Covid-19 Vaccine Updation Form</h3>
+                       </div>
+                       <div class="card-body">
+                           <form name="myform" action="" method="post" onsubmit="return(validate());">
+                            <div class="form-group">
+                                <label for="Adnumber"><b>Enter your Adhar number for update</b></label>
+                                <input type="number" class="form-control" id="Adnumber" name="Adnumber" placeholder="Enter your Verification id for update "  />
+                            </div>
+                               <div class="form-group">
+                                   <label for="firstname"><b>First Name</b></label>
+                                   <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter your First name"  />
+                               </div>
+                              <div class="form-group">
+                                   <label for="lastname"><b>Last Name</b></label>
+                                   <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter you last name"  />
+                               </div>
+                               <div class="form-group">
+                                           <b>Gender:</b> Female <input type="radio" name="myGender"> male <input type="radio" name="myGender"> Others <input type="radio" name="myGender">
+                               </div><br>
+                               <div class="form-group">
+                                   <b>Date Of Birth</b> : <input type="date" class="form-control" name="myDate" id="">
+                               </div>
+                           
+                               <div class="form-group">
+                                   <label for="email"><b>Email Id</b></label>
+                                   <input type="text" class="form-control" id="email" name="email"  />
+                               </div>
+                               <div class="form-group">
+                                   <label for="Pnumber"><b>Phone Number</b></label>
+                                   <input type="number" class="form-control" id="Pnumber" name="Pnumber"  />
+                               </div>
+                               <div class="form-group">
+                                   <label for="country"><b>Country</b></label>
+                                       <select name="country" class="form-control" id="country">
+                                           <option value="India" selected>India</option>
+                                           <option value="USA">USA</option>
+                                           <option value="Australia">Australia</option>
+                                           <option value="Bangladesh">Bangladesh</option>
+                                           <option value="Canada">Canada</option>
+                                           <option value="Other">Other</option>     
+                                       </select>
+                                       </div>
+                                   <div class="form-group">
+                                       <label for="DoseName"><b>Dose Name</b></label>
+                                       <input type="text" class="form-control" id="DoseName" name="DoseName"  />
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="DoseNo"><b>Dose no</b></label>
+                                       <input type="number" class="form-control" id="DoseNo" name="DoseNo" />
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="VaccDate"><b>Vaccination Date</b></label>
+                                       <input type="date" class="form-control" id="VaccDate" name="VaccDate"  />
+                                   </div>
+                                   <label for="hospitalType"><b>Hospital Type</b></label>
+                                   <select name="HospitalType" class="form-control" id="hospitalType">
+                                       <option value="Private" selected>Private</option>
+                                       <option value="Public"><b>Public</b></option>     
+                                   </select>
+                               </div>
+                              
+                                   <div class="form-group">
+                                   <b>Slot Time</b> : Morning <input type="radio" name="shift"> Afternoon <input type="radio" name="shift"> Evening <input type="radio" name="shift">
+                           </div>
+                        
+                               <div class="form-group">
+                                   <label for="number"><b>Upload Adhar Card</b></label><br>
+                               <label for="files"><b>uploud files</b></label>
+                               <input type="file" id="files" name="files" />
+                               <input type="submit" class="btn btn-success mt-2" value="Update" />
+                           </form>
+                       </div>
+                       <div class="panel-footer text-right" style="text-align: center;"> 
+                        </div> 
+                   </div>
+               </div>
+           </div>
+       </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+   </body>
+</html>
